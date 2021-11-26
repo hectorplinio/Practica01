@@ -1,0 +1,30 @@
+CRITICAL - 2021-11-26 12:34:57 --> Invalid file: PublicSection.php
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('PublicSection.p...')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/View/View.php(230): CodeIgniter\View\View->render('PublicSection', Array, true)
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('PublicSection/h...', Array, true)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/HomeController.php(11): view('PublicSection/h...')
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\HomeController->home()
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\HomeController))
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-26 12:35:04 --> Invalid file: /PublicSection.php
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/PublicSection....')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/View/View.php(230): CodeIgniter\View\View->render('/PublicSection', Array, true)
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('PublicSection/h...', Array, true)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/HomeController.php(11): view('PublicSection/h...')
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\HomeController->home()
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\HomeController))
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-11-26 12:35:11 --> Invalid file: /PublicSection.php
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/PublicSection....')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/View/View.php(230): CodeIgniter\View\View->render('/PublicSection', Array, true)
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('PublicSection/h...', Array, true)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/HomeController.php(11): view('PublicSection/h...')
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\HomeController->home()
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\HomeController))
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,2 +1,6 @@
-<h1>HomeAdmin</h1>
-<a href="<?= route_to('login_page') ?>">Ir a login</a>
+<?= $this->extend('Administration/base_layout') ?>
+
+<?= $this->section('section') ?>
+    <h1>HomeAdmin</h1>
+    <a href="<?= route_to('login_page') ?>">Ir a login</a>
+<?= $this->endSection() ?>
