@@ -1,0 +1,28 @@
+.contenedor{
+    text-align: center;
+    background-color: #F4F4F4;
+    padding: 2em;
+}
+img{
+    width: 100%;
+}
+.festival{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1em;
+}
+.tarjeta{
+    width: 100%;
+    text-align: initial;
+    background-color: white;
+}
+.imagen{
+    width: 100%;
+    height: 33%;
+}
+.titulo{
+    text-align: initial;
+}
+.info{
+    padding: 0.5em;
+}
