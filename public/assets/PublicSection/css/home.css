@@ -2,6 +2,12 @@
     text-align: center;
     background-color: #F4F4F4;
     padding: 2em;
+    display: grid;
+}
+.titulos{
+    margin: auto;
+    align-items: center;
+    text-align: center;
 }
 img{
     width: 100%;
@@ -10,6 +16,7 @@ img{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 1em;
+    margin: 1.5em;
 }
 .tarjeta{
     width: 100%;
@@ -22,6 +29,7 @@ img{
 }
 .titulo{
     text-align: initial;
+    margin: 0.5em;
 }
 .info{
     padding: 0.5em;

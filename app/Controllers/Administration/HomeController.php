@@ -7,7 +7,9 @@ use App\Controllers\BaseController;
 class HomeController extends BaseController
 {
     public function home (){
-        
-        return view ("Administration/home");
+        $data = array(
+            "title" => "Administration",
+        );
+        return view ("Administration/home", $data);
     }
 }

@@ -1,4 +1,7 @@
 <?= $this->extend('PublicSection/base_layout') ?>
+    <?= $this->section('title') ?>
+        <title><?= $title ?></title>
+    <?= $this->endSection() ?>
     <?= $this->section('css') ?>
         <link href="<?= base_url('assets/PublicSection/css/login.css')?>"rel="stylesheet" type="text/css">
     <?= $this->endSection() ?>
