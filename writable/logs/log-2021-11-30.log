@@ -1,0 +1,188 @@
+ERROR - 2021-11-30 09:28:05 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 09:28:40 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 09:31:28 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 09:32:22 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 09:32:30 --> Error connecting to the database: Connection refused
+ERROR - 2021-11-30 09:32:57 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 09:34:11 --> Error connecting to the database: Connection refused
+ERROR - 2021-11-30 09:34:41 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 09:35:56 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 09:36:26 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 09:38:37 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 09:38:44 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 09:40:31 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 09:43:58 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 09:44:03 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 09:44:31 --> Error connecting to the database: MySQL server has gone away
+CRITICAL - 2021-11-30 09:48:32 --> syntax error, unexpected variable "$db", expecting "function" or "const"
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/M...')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Database')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Database')
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Factories.php(136): class_exists('Config\\Database')
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Factories.php(106): CodeIgniter\Config\Factories::locateClass(Array, 'Database')
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(143): config('Database')
+#7 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Services.php(376): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), NULL)
+#8 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), NULL, false)
+#9 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#10 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Services.php(371): CodeIgniter\Config\BaseService::getSharedInstance('migrations', NULL, NULL)
+#11 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::migrations()
+#12 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(69): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#13 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#14 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(70): CodeIgniter\CLI\Commands->run('migrate', Array)
+#15 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#16 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(822): CodeIgniter\CLI\CommandRunner->_remap('index', 'migrate')
+#17 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#18 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#20 /Applications/MAMP/htdocs/Codeigniter/Practica01/spark(63): CodeIgniter\CLI\Console->run()
+#21 {main}
+CRITICAL - 2021-11-30 09:49:18 --> You have not selected a database type to connect to.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Common.php(312): CodeIgniter\Database\Config::connect('default', true)
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(149): db_connect(NULL)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Services.php(376): CodeIgniter\Database\MigrationRunner->__construct(NULL, NULL)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), NULL, false)
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Services.php(371): CodeIgniter\Config\BaseService::getSharedInstance('migrations', NULL, NULL)
+#7 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::migrations()
+#8 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(69): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#9 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(70): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#12 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(822): CodeIgniter\CLI\CommandRunner->_remap('index', 'migrate')
+#13 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#14 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#16 /Applications/MAMP/htdocs/Codeigniter/Practica01/spark(63): CodeIgniter\CLI\Console->run()
+#17 {main}
+CRITICAL - 2021-11-30 09:49:33 --> You have not selected a database type to connect to.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Common.php(312): CodeIgniter\Database\Config::connect('default', true)
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(149): db_connect(NULL)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Services.php(376): CodeIgniter\Database\MigrationRunner->__construct(NULL, NULL)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), NULL, false)
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Services.php(371): CodeIgniter\Config\BaseService::getSharedInstance('migrations', NULL, NULL)
+#7 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::migrations()
+#8 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(69): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#9 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(70): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#12 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(822): CodeIgniter\CLI\CommandRunner->_remap('index', 'migrate')
+#13 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#14 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#16 /Applications/MAMP/htdocs/Codeigniter/Practica01/spark(63): CodeIgniter\CLI\Console->run()
+#17 {main}
+CRITICAL - 2021-11-30 09:50:31 --> You have not selected a database type to connect to.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Common.php(312): CodeIgniter\Database\Config::connect('default', true)
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(149): db_connect(NULL)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Services.php(376): CodeIgniter\Database\MigrationRunner->__construct(NULL, NULL)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), NULL, false)
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Services.php(371): CodeIgniter\Config\BaseService::getSharedInstance('migrations', NULL, NULL)
+#7 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::migrations()
+#8 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(69): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#9 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(70): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#12 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(822): CodeIgniter\CLI\CommandRunner->_remap('index', 'migrate')
+#13 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#14 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#16 /Applications/MAMP/htdocs/Codeigniter/Practica01/spark(63): CodeIgniter\CLI\Console->run()
+#17 {main}
+CRITICAL - 2021-11-30 09:50:41 --> You have not selected a database type to connect to.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Common.php(312): CodeIgniter\Database\Config::connect('default', true)
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(149): db_connect(NULL)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Services.php(376): CodeIgniter\Database\MigrationRunner->__construct(NULL, NULL)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), NULL, false)
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Services.php(371): CodeIgniter\Config\BaseService::getSharedInstance('migrations', NULL, NULL)
+#7 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::migrations()
+#8 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(69): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#9 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(70): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#12 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(822): CodeIgniter\CLI\CommandRunner->_remap('index', 'migrate')
+#13 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#14 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#16 /Applications/MAMP/htdocs/Codeigniter/Practica01/spark(63): CodeIgniter\CLI\Console->run()
+#17 {main}
+CRITICAL - 2021-11-30 09:52:33 --> syntax error, unexpected token "/", expecting "function" or "const"
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/M...')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Database')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Database')
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Factories.php(136): class_exists('Config\\Database')
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Factories.php(106): CodeIgniter\Config\Factories::locateClass(Array, 'Database')
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(143): config('Database')
+#7 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Services.php(376): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), NULL)
+#8 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), NULL, false)
+#9 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#10 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/Services.php(371): CodeIgniter\Config\BaseService::getSharedInstance('migrations', NULL, NULL)
+#11 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Config/BaseService.php(248): CodeIgniter\Config\Services::migrations()
+#12 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(69): CodeIgniter\Config\BaseService::__callStatic('migrations', Array)
+#13 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#14 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(70): CodeIgniter\CLI\Commands->run('migrate', Array)
+#15 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#16 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(822): CodeIgniter\CLI\CommandRunner->_remap('index', 'migrate')
+#17 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#18 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#20 /Applications/MAMP/htdocs/Codeigniter/Practica01/spark(63): CodeIgniter\CLI\Console->run()
+#21 {main}
+ERROR - 2021-11-30 09:52:47 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 09:53:27 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 09:57:14 --> Error connecting to the database: Connection refused
+ERROR - 2021-11-30 09:57:34 --> Error connecting to the database: Connection refused
+ERROR - 2021-11-30 09:59:26 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 10:00:33 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 10:01:40 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 10:02:13 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 10:05:49 --> Error connecting to the database: Connection refused
+ERROR - 2021-11-30 11:47:00 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 11:47:12 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 11:47:21 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 12:10:18 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:12:05 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 12:12:17 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 12:12:47 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:16:31 --> Error connecting to the database: php_network_getaddresses: getaddrinfo for http failed: nodename nor servname provided, or not known
+ERROR - 2021-11-30 12:16:55 --> Error connecting to the database: php_network_getaddresses: getaddrinfo for http failed: nodename nor servname provided, or not known
+ERROR - 2021-11-30 12:17:24 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 12:17:54 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:18:19 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:20:52 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:21:35 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:24:55 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:27:37 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 12:27:59 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 12:28:28 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:30:12 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:36:03 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:37:32 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 12:37:40 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 12:37:52 --> Error connecting to the database: php_network_getaddresses: getaddrinfo for http//localhost failed: nodename nor servname provided, or not known
+ERROR - 2021-11-30 12:38:08 --> Error connecting to the database: php_network_getaddresses: getaddrinfo for http//127.0.0.1 failed: nodename nor servname provided, or not known
+ERROR - 2021-11-30 12:38:34 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:40:08 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:43:20 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:44:39 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:50:26 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 12:53:25 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 13:00:09 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 13:00:42 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 13:01:58 --> Error connecting to the database: No such file or directory
+ERROR - 2021-11-30 13:02:15 --> Error connecting to the database: Connection refused
+ERROR - 2021-11-30 13:02:45 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 13:03:17 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 13:03:33 --> Error connecting to the database: Connection refused
+ERROR - 2021-11-30 13:03:39 --> Error connecting to the database: Connection refused
+ERROR - 2021-11-30 13:04:15 --> Error connecting to the database: Connection refused
+ERROR - 2021-11-30 13:04:48 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-11-30 13:05:39 --> Error connecting to the database: MySQL server has gone away

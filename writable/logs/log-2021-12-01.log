@@ -1,0 +1,39 @@
+ERROR - 2021-12-01 02:39:00 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-12-01 02:40:16 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-12-01 02:40:52 --> Error connecting to the database: No such file or directory
+ERROR - 2021-12-01 02:41:32 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-12-01 02:42:11 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-12-01 02:42:43 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-12-01 02:43:14 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-12-01 02:43:46 --> Error connecting to the database: php_network_getaddresses: getaddrinfo for http failed: nodename nor servname provided, or not known
+ERROR - 2021-12-01 02:44:14 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-12-01 02:44:37 --> Error connecting to the database: Connection refused
+ERROR - 2021-12-01 02:44:45 --> Error connecting to the database: Connection refused
+ERROR - 2021-12-01 02:44:52 --> Error connecting to the database: Connection refused
+ERROR - 2021-12-01 02:45:05 --> Error connecting to the database: Connection refused
+ERROR - 2021-12-01 02:45:13 --> Error connecting to the database: Connection refused
+ERROR - 2021-12-01 02:45:35 --> Error connecting to the database: Connection refused
+ERROR - 2021-12-01 02:45:40 --> Error connecting to the database: Connection refused
+ERROR - 2021-12-01 02:45:50 --> Error connecting to the database: Connection refused
+ERROR - 2021-12-01 02:45:59 --> Error connecting to the database: Connection refused
+ERROR - 2021-12-01 02:46:25 --> Error connecting to the database: MySQL server has gone away
+ERROR - 2021-12-01 03:36:37 --> Error connecting to the database: Unknown database 'practicacdeigniter'
+ERROR - 2021-12-01 03:43:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL,
+	`deleted_at` VARCHAR NULL,
+	CONSTRAINT `pk_Roles` PRIMARY KEY(`id`)
+) DEF' at line 5
+ERROR - 2021-12-01 03:54:45 --> Table 'roles' already exists
+ERROR - 2021-12-01 04:00:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`email` VARCHAR(255) UNSIGNED NOT NULL,
+	`password` VARCHAR(' at line 3
+ERROR - 2021-12-01 04:00:38 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-12-01 04:01:59 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-12-01 04:16:51 --> Unknown table 'practicacodeigniter.festivals'
+ERROR - 2021-12-01 04:17:24 --> Unknown table 'practicacodeigniter.festivals'
+ERROR - 2021-12-01 04:17:41 --> Unknown table 'practicacodeigniter.festivals'
+ERROR - 2021-12-01 04:25:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AUTO_INCREMENT0 = 1' at line 1
+ERROR - 2021-12-01 04:56:23 --> Unknown column 'role_id' in 'field list'
+ERROR - 2021-12-01 05:07:41 --> Unknown column 'addres' in 'field list'
+ERROR - 2021-12-01 05:08:01 --> Unknown column 'address' in 'field list'
+ERROR - 2021-12-01 05:08:37 --> Unknown column 'address' in 'field list'
+ERROR - 2021-12-01 05:09:13 --> Unknown column 'address' in 'field list'

@@ -26,7 +26,7 @@
             <div> 
                 <a href="#" class="nav_logo"><i class="fas fa-solar-panel nav_logo-icon"></i> <span class="nav_logo-name">Panel Admin</span> </a>
                 <div class="nav_list"> 
-                    <a href="#" class="nav_link"> <i class="fas fa-home"></i> <span class="nav_name">Inicio</span> </a> 
+                    <a href="#" class="nav_link active"> <i class="fas fa-home"></i> <span class="nav_name">Inicio</span> </a> 
                     <a href="#" class="nav_link"> <i class="fas fa-music"></i> <span class="nav_name">Festivales</span> </a> 
                     <a href="#" class="nav_link"> <i class="far fa-list-alt"></i> <span class="nav_name">Categorías</span> </a> 
                     <a href="#" class="nav_link"> <i class="fas fa-users"></i> <span class="nav_name">Usuarios</span> </a> 
@@ -39,7 +39,9 @@
     </div>
     <!--Container Main start-->
     <div class="height-100 bg-light">
-        <h4>Main Components</h4>
+        <div class="barra">
+            <?=$title?>
+        </div>
         <?= $this->renderSection('section') ?>
     </div>
 </body>
