@@ -9,6 +9,7 @@ use App\Entities\Users;
 use App\Models\CategoriesModel;
 use App\Models\FestivalsModel;
 use App\Models\UsersModel;
+use CodeIgniter\I18n\Time;
 
 class Home extends BaseController
 {
@@ -46,17 +47,17 @@ class Home extends BaseController
         // $cat = $catModel->find(2);
         // $cat -> name = "House";
         // $catModel->save($cat);
-        $catModel = new CategoriesModel();
-        $catModel->delete(2);
-        dd($catModel);
-        //$cat = $catModel->find(2);
+        // $catModel = new CategoriesModel();
+        // $catModel->delete(2);
+        // dd($catModel);
+        // //$cat = $catModel->find(2);
         //dd($cat);
         //Para eliminar un objeto 
         // $catModel -> delete(2);
         //return view('welcome_message');
-        // $catModel = new FestivalsModel();
-
-        // $cat = $catModel->findFestivalsByCategory(1);    
-        // dd($cat);
+        $catModel = new FestivalsModel();
+        $cat2 =  new Time('now');
+        $cat = $catModel->findFestivalsByOverDate($cat2);  
+        dd($cat);
     }
 }

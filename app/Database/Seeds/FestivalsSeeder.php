@@ -10,8 +10,8 @@ class FestivalsSeeder extends Seeder
 {
     public function run()
     {
-        //$this->db->table('Festivals')->where("id > " ,0)->delete();
-        //$this->db->query("ALTER TABLE Festivals AUTO_INCREMENT = 1");
+        // $this->db->table('Festivals')->where("id > " ,0)->delete();
+        // $this->db->query("ALTER TABLE Festivals AUTO_INCREMENT = 1");
         $faker = Factory::create();
         $FestivalsBuilder = $this->db->table('Festivals');
 
@@ -19,8 +19,8 @@ class FestivalsSeeder extends Seeder
             [   
                 "name" => $faker->username,
                 "email" => $faker->email,
-                "date" => "2021-05-08 14:52:10",
-                "price" => "50",
+                "date" => $faker->iso8601($min = 'now') ,
+                "price" =>  $faker->dateTimeBetween('now', '+3 years')->format('Y-m-d H:i:s'),
                 "address" => $faker->city,
                 "image_url" => $faker->image,
                 "category_id" => 1,
@@ -30,8 +30,8 @@ class FestivalsSeeder extends Seeder
             [
                 "name" => $faker->username,
                 "email" => $faker->email,
-                "date" => "2021-10-18 14:52:10",
-                "price" => "50",
+                "date" =>  $faker->dateTimeBetween('now', '+3 years')->format('Y-m-d H:i:s'),
+                "price" => $faker->numberBetween($min = 10, $max = 90),
                 "address" => $faker->address,
                 "image_url" => $faker->image,
                 "category_id" => 2,

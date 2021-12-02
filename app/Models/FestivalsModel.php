@@ -50,4 +50,36 @@ class FestivalsModel extends Model
         return $this -> where(['category_id' => $category_id])
                      ->find();
     }
+    public function findFestivalsByUnderPrice($price = null){
+        if (is_null($price)){
+            return $this->findAll();
+        }
+        //Asi se hacen menor o mayor
+        return $this -> where(['price <=' => $price])
+                     ->find();
+    }
+    public function findFestivalsByOverPrice($price = null){
+        if (is_null($price)){
+            return $this->findAll();
+        }
+        //Asi se hacen menor o mayor
+        return $this -> where(['price >=' => $price])
+                     ->find();
+    }
+    public function findFestivalsByUnderDate($date = null){
+        if (is_null($date)){
+            return $this->findAll();
+        }
+        //Asi se hacen menor o mayor
+        return $this -> where(['date <=' => $date])
+                     ->find();
+    }
+    public function findFestivalsByOverDate($date = null){
+        if (is_null($date)){
+            return $this->findAll();
+        }
+        //Asi se hacen menor o mayor
+        return $this -> where(['date >=' => $date])
+                     ->find();
+    }
 }
