@@ -10,8 +10,8 @@ class UsersSeeder extends Seeder
 {
     public function run()
     {
-        $this->db->table('Users')->where("id > " ,0)->delete();
-        $this->db->query("ALTER TABLE Users AUTO_INCREMENT = 1");
+        //$this->db->table('Users')->where("id > " ,0)->delete();
+        //$this->db->query("ALTER TABLE Users AUTO_INCREMENT = 1");
         $faker = Factory::create();
         $usersBuilder = $this->db->table('Users');
 

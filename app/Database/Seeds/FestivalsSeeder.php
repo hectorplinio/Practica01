@@ -23,7 +23,9 @@ class FestivalsSeeder extends Seeder
                 "price" => "50",
                 "address" => $faker->city,
                 "image_url" => $faker->image,
-                "category_id" => 1
+                "category_id" => 1,
+                "created_at" => new Time('now')
+
             ],
             [
                 "name" => $faker->username,
@@ -32,7 +34,9 @@ class FestivalsSeeder extends Seeder
                 "price" => "50",
                 "address" => $faker->address,
                 "image_url" => $faker->image,
-                "category_id" => 2
+                "category_id" => 2,
+                "created_at" => new Time('now')
+
             ]
         ];
         $FestivalsBuilder -> insertBatch($Festivals);
