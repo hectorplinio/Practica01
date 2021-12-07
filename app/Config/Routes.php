@@ -43,10 +43,15 @@ $routes->group('', function ($routes){
     $routes->get('/', 'Home::index');
     $routes->get('/login', 'LoginController::login', ['as' => 'login_page','namespace' => PUBLIC_NAMESPACE]);
     $routes->get('/home', 'HomeController::home', ['as' => 'home_page' ,'namespace' => PUBLIC_NAMESPACE]);
+    $routes->get('/pruebaAjax', 'LoginController::pruebaAjax', ['as' => 'prueba_ajax','namespace' => PUBLIC_NAMESPACE]);
+    $routes->post('/formulario', 'LoginController::formulario', ['as' => 'formulario','namespace' => PUBLIC_NAMESPACE]);
+
+
 });
 $routes->group('admin', function ($routes){
     $routes->get('home', 'HomeController::home' , ['as' => 'admin_page','namespace' => ADMIN_NAMESPACE ]);
 });
+
 
 /*
  * --------------------------------------------------------------------

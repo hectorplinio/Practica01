@@ -57,7 +57,7 @@ class Home extends BaseController
         //return view('welcome_message');
         $catModel = new FestivalsModel();
         $cat2 =  new Time('now');
-        $cat = $catModel->findFestivalsByOverDate($cat2);  
+        $cat = $catModel->findFestivalsByUnderDate($cat2);  
         dd($cat);
     }
 }

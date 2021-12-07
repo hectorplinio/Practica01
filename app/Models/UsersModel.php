@@ -43,6 +43,20 @@ class UsersModel extends Model
         return $this -> where(['id' => $id])
                      ->first();
     }
+    public function findUsersEmail($email = null){
+        if (is_null($email)){
+            return $this->findAll();
+        }
+        return $this -> where(['email' => $email])
+                     ->first();
+    }
+    public function findUsersSurname($surname = null){
+        if (is_null($surname)){
+            return $this->findAll();
+        }
+        return $this -> where(['surname' => $surname])
+                     ->first();
+    }
     public function findUsersRolId($rol_id = null){
         if (is_null($rol_id)){
             return $this->findAll();
