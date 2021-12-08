@@ -46,11 +46,15 @@
 
                         },
                         success: (response) =>{
-                            document.getElementById("toast").style.display("flex");
-                            console.log(response);
+                            $('.toast').toast('show')
                             response = JSON.parse(response);
-                            // alert(response.message);
-                            alert(response.message);
+                            console.log(response.message);
+                            if (response.message == "Email y usuario no encontrado"){
+                                
+                            }else if (response.message == "Email encontrado"){
+                            }
+                            toast.innerHTML=response.message;
+                            
                         },
                         error: (xhr, status, error) =>{
                             alert("Se ha producido un error");
@@ -58,18 +62,20 @@
                         complete: () =>{
 
                         }
-                    })
+                    });
                 });
             });
         </script>
     <?= $this->endSection() ?>
     <?= $this->section('section') ?>
-    <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true" id="toast">
-        <div class="d-flex">
-            <div class="toast-body">
-            Hello, world! This is a toast message.
+    <div class="toast" style=" height: 3em; position: absolute; margin-top: 2em; text-align: right;">
+        <div class="toast align-items-center text-white bg-primary border-0" id="bg-primary" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="toast">
+                
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
     </div>
         <div class="contenedor">
@@ -82,7 +88,7 @@
                     <input type="pass" class="form-control" placeholder="Password" name="password" id="password">
                     <button class="btn btn-primary" id="formulario" type="submit">Sign in</button>
                 </form>
-                <button id="btn-ajax" class="btn btn-primary" type="submit">AJAX</button>
+                <!-- <button id="btn-ajax" class="btn btn-primary" type="submit">AJAX</button> -->
 
                 <p id="fecha">©️&nbsp2017-2021</p>
                 <div class="enlaces">
