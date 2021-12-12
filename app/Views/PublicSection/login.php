@@ -40,6 +40,7 @@
                         data: data,
                         processData: false,
                         contentType: false,
+                        dataType: "json",
                         async: true,
                         timeout: 5000,
                         beforeSend:(xhr) =>{
@@ -47,16 +48,19 @@
                         },
                         success: (response) =>{
                             $('.toast').toast('show')
-                            response = JSON.parse(response);
-                            console.log(response.message);
-                            if (response.message == "Email y usuario no encontrado"){
-                                
+                            console.log(response.data);
+                            if (response.message == "Usuario no encontrado"){
+                                $("#bg-primary").removeClass('toast align-items-center text-white bg-primary border-0').addClass('toast align-items-center text-white bg-danger border-0')
                             }else if (response.message == "Email encontrado"){
+                                $("#bg-primary").removeClass('toast align-items-center text-white bg-danger border-0').addClass('toast align-items-center text-white bg-primary border-0')
+                            }else if (response.message == "Usuario encontrado pero contraseña no coincide"){
+                                $("#bg-primary").removeClass('toast align-items-center text-white bg-primary border-0').addClass('toast align-items-center text-white bg-warning border-0')
+                                $("#bg-primary").removeClass('toast align-items-center text-white bg-danger border-0').addClass('toast align-items-center text-white bg-warning border-0')
                             }
                             toast.innerHTML=response.message;
-                            
                         },
                         error: (xhr, status, error) =>{
+                            console.log(error);
                             alert("Se ha producido un error");
                         },
                         complete: () =>{

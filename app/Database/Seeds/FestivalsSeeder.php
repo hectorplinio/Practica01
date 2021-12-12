@@ -19,8 +19,8 @@ class FestivalsSeeder extends Seeder
             [   
                 "name" => $faker->username,
                 "email" => $faker->email,
-                "date" => $faker->iso8601($min = 'now') ,
-                "price" =>  $faker->dateTimeBetween('now', '+3 years')->format('Y-m-d H:i:s'),
+                "date" =>  $faker->dateTimeBetween('-1 year', '+3 years')->format('Y-m-d H:i:s'),
+                "price" => $faker->numberBetween($min = 10, $max = 90),
                 "address" => $faker->city,
                 "image_url" => $faker->image,
                 "category_id" => 1,
@@ -30,7 +30,7 @@ class FestivalsSeeder extends Seeder
             [
                 "name" => $faker->username,
                 "email" => $faker->email,
-                "date" =>  $faker->dateTimeBetween('now', '+3 years')->format('Y-m-d H:i:s'),
+                "date" =>  $faker->dateTimeBetween('1- year', '+3 years')->format('Y-m-d H:i:s'),
                 "price" => $faker->numberBetween($min = 10, $max = 90),
                 "address" => $faker->address,
                 "image_url" => $faker->image,

@@ -1,0 +1,24 @@
+CRITICAL - 2021-12-09 13:05:33 --> Object of class App\Entities\Users could not be converted to string
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-09 13:05:48 --> Cannot use object of type App\Entities\Users as array
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-09 13:13:00 --> Object of type App\Entities\Users is not callable
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-09 13:15:11 --> Cannot use object of type App\Entities\Users as array
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

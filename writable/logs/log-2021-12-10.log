@@ -1,0 +1,259 @@
+CRITICAL - 2021-12-10 08:22:40 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 08:24:03 --> Undefined array key "password"
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 08:24:49 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 08:25:39 --> syntax error, unexpected token "else", expecting "function" or "const"
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/M...')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-10 08:25:57 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 08:26:00 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 08:27:59 --> Cannot use object of type App\Entities\Users as array
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-10 08:28:49 --> Cannot use object of type App\Entities\Users as array
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-10 08:29:16 --> Cannot use object of type App\Entities\Users as array
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-10 08:58:32 --> Trying to access array offset on value of type null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Applications/M...', 39)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 09:01:01 --> Undefined variable $response
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 69)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 09:01:16 --> Undefined variable $response
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 68)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 09:02:13 --> Undefined variable $response
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 68)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 09:04:46 --> Undefined variable $response
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 73)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 09:06:01 --> Undefined variable $response
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 73)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 10:09:10 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 10:09:31 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 10:09:45 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 10:09:59 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 10:10:12 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 10:45:40 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 10:45:46 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 12:14:10 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 12:14:31 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 12:15:28 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 12:15:33 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 12:15:35 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 12:16:47 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 12:17:07 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 12:18:50 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 12:19:12 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 40)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 13:26:21 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 26)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 13:26:43 --> Attempt to read property "password" on null
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/Applications/M...', 26)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 13:29:21 --> Undefined variable $response
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 46)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-10 13:42:10 --> syntax error, unexpected token "->"
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/M...')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(27): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-10 13:42:16 --> syntax error, unexpected token "->"
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/M...')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/PublicSection/LoginController.php(27): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\PublicSection\LoginController->formulario()
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PublicSection\LoginController))
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-10 13:46:45 --> Unknown column 'gregorio68' in 'where clause'
+ERROR - 2021-12-10 13:46:56 --> Unknown column 'lharber@mueller.com' in 'where clause'
+ERROR - 2021-12-10 13:46:59 --> Unknown column 'lharber@mueller.com' in 'where clause'
+ERROR - 2021-12-10 13:47:15 --> Unknown column 'lharber@mueller.com' in 'where clause'

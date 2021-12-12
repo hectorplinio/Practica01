@@ -47,14 +47,15 @@ class UsersModel extends Model
         if (is_null($email)){
             return $this->findAll();
         }
-        return $this -> where(['email' => $email])
+        $condition = "email= '$email' OR username ='$email'";
+        return $this -> where($condition)
                      ->first();
     }
     public function findUsersSurname($surname = null){
         if (is_null($surname)){
             return $this->findAll();
         }
-        return $this -> where(['surname' => $surname])
+        return $this -> where(['surname' => $surname ])
                      ->first();
     }
     public function findUsersRolId($rol_id = null){

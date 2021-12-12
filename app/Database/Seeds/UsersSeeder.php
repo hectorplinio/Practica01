@@ -10,16 +10,18 @@ class UsersSeeder extends Seeder
 {
     public function run()
     {
-        //$this->db->table('Users')->where("id > " ,0)->delete();
-        //$this->db->query("ALTER TABLE Users AUTO_INCREMENT = 1");
+        $this->db->table('Users')->where("id > " ,0)->delete();
+        $this->db->query("ALTER TABLE Users AUTO_INCREMENT = 1");
         $faker = Factory::create();
         $usersBuilder = $this->db->table('Users');
+        $password="1234";
+        $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
         $users = [
             [   
                 "username" => $faker->username,
                 "email" => $faker->email,
-                "password" => "1234",
+                "password" =>  $password_hash ,
                 "name" => $faker->name,
                 "surname" => $faker->name,
                 "created_at" => new Time('now'),
@@ -28,7 +30,7 @@ class UsersSeeder extends Seeder
             [
                 "username" => $faker->username,
                 "email" => $faker->email,
-                "password" => "1234",
+                "password" => $faker->name = password_hash($password, PASSWORD_BCRYPT) ,
                 "name" => $faker->name,
                 "surname" => $faker->name,
                 "created_at" => new Time('now'),
