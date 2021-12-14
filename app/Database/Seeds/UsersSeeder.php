@@ -30,7 +30,7 @@ class UsersSeeder extends Seeder
             [
                 "username" => $faker->username,
                 "email" => $faker->email,
-                "password" => $faker->name = password_hash($password, PASSWORD_BCRYPT) ,
+                "password" =>  $password_hash ,
                 "name" => $faker->name,
                 "surname" => $faker->name,
                 "created_at" => new Time('now'),

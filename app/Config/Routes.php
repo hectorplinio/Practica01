@@ -25,6 +25,8 @@ $routes->setAutoRoute(false);
 
 if(!defined('ADMIN_NAMESPACE'))define ('ADMIN_NAMESPACE', 'App\Controllers\Administration');
 if(!defined('PUBLIC_NAMESPACE'))define ('PUBLIC_NAMESPACE', 'App\Controllers\PublicSection');
+if(!defined('COMMAND_NAMESPACE'))define ('COMMAND_NAMESPACE', 'App\Controllers\Command');
+
 /*
  * --------------------------------------------------------------------
  * Route Definitions
@@ -40,16 +42,20 @@ $routes->get('/home/', 'HomeController::home', ['as' => 'home_page' ,'namespace'
 */
 //Asi se hace para agrupar las publicas
 $routes->group('', function ($routes){
-    $routes->get('/', 'Home::index');
-    $routes->get('/login', 'LoginController::login', ['as' => 'login_page','namespace' => PUBLIC_NAMESPACE]);
-    $routes->get('/home', 'HomeController::home', ['as' => 'home_page' ,'namespace' => PUBLIC_NAMESPACE]);
+    $routes->get('/', 'LoginController::login', ['as' => 'login_page','filter' => 'login_auth' ,'namespace' => PUBLIC_NAMESPACE]);
+    $routes->get('/home', 'HomeController::home', ['as' => 'home_page', 'filter' => 'auth_public' ,'namespace' => PUBLIC_NAMESPACE]);
     $routes->get('/pruebaAjax', 'LoginController::pruebaAjax', ['as' => 'prueba_ajax','namespace' => PUBLIC_NAMESPACE]);
     $routes->post('/formulario', 'LoginController::formulario', ['as' => 'formulario','namespace' => PUBLIC_NAMESPACE]);
 
 
 });
 $routes->group('admin', function ($routes){
-    $routes->get('home', 'HomeController::home' , ['as' => 'admin_page','namespace' => ADMIN_NAMESPACE ]);
+    $routes->get('', 'HomeController::home' , ['as' => 'admin_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+});
+$routes->group('commands', function ($routes){
+    $routes->cli('comando_uno', 'Prueba::comandoUno' , ['namespace' => COMMAND_NAMESPACE ]);
+    $routes->cli('comando_dos', 'Prueba::comandoDos' , ['namespace' => COMMAND_NAMESPACE ]);
+
 });
 
 
