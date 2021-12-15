@@ -8,6 +8,7 @@ use App\Libraries\UtilLibrary;
 use App\Models\RolesModel;
 use App\Models\UsersModel;
 use CodeIgniter\I18n\Time;
+use Config\UserProfiles;
 use Exception;
 
 class LoginController extends BaseController
@@ -33,10 +34,15 @@ class LoginController extends BaseController
                 if(password_verify($pass, $pass_hash)){
                     $session = session();
                     $rol = $rol->find($users->rol_id);
+                    if ($rol->name ==  "admin"){
+                        $rol = UserProfiles::ADMIN_ROLE;
+                    }else{
+                        $rol = UserProfiles::APP_PUBLIC_ROLE;
+                    }
                     $dataSession= [
                         "username" => $users->username,
                         "email" => $users->email,
-                        "rol" => $rol->name ,
+                        "rol" => $rol,
                         "date" => new Time('now'),
                     ];
                     $session->set($dataSession);

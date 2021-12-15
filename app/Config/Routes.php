@@ -55,6 +55,9 @@ $routes->group('admin', function ($routes){
 $routes->group('commands', function ($routes){
     $routes->cli('comando_uno', 'Prueba::comandoUno' , ['namespace' => COMMAND_NAMESPACE ]);
     $routes->cli('comando_dos', 'Prueba::comandoDos' , ['namespace' => COMMAND_NAMESPACE ]);
+    $routes->cli('pokemon', 'Prueba::pokemon' , ['namespace' => COMMAND_NAMESPACE ]);
+    $routes->cli('villena', 'Prueba::villena' , ['namespace' => COMMAND_NAMESPACE ]);
+
 
 });
 

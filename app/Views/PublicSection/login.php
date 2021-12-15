@@ -53,9 +53,9 @@
                                 $("#bg-primary").removeClass('toast align-items-center text-white bg-primary border-0').addClass('toast align-items-center text-white bg-danger border-0')
                             }else if (response.message == "Usuario encontrado"){
                                 $("#bg-primary").removeClass('toast align-items-center text-white bg-danger border-0').addClass('toast align-items-center text-white bg-primary border-0');
-                                if (response.data.name == "admin"){
+                                if (response.data == "admin"){
                                     window.location.replace('<?= route_to("admin_page") ?>');
-                                }else if (response.data.name == "app_client"){
+                                }else if (response.data == "app_client"){
                                     window.location.replace('<?= route_to("home_page") ?>');
                                 }
                             }else if (response.message == "Usuario encontrado pero contraseña no coincide"){
