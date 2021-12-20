@@ -1,0 +1,41 @@
+CRITICAL - 2021-12-16 11:47:28 --> Object of class App\Entities\Categories could not be converted to int
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/Rest/CategoriesController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', '/Applications/M...', 15)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Rest\CategoriesController->categoriesRest('2')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rest\CategoriesController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-16 11:47:32 --> Object of class App\Entities\Categories could not be converted to int
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/Rest/CategoriesController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', '/Applications/M...', 15)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Rest\CategoriesController->categoriesRest('1')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rest\CategoriesController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-16 11:47:50 --> Object of class App\Entities\Categories could not be converted to int
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/Rest/CategoriesController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', '/Applications/M...', 15)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Rest\CategoriesController->categoriesRest('1')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rest\CategoriesController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-16 13:06:18 --> Too few arguments to function App\Controllers\Rest\CategoriesController::getBody(), 0 passed in /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Rest\CategoriesController->getBody()
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rest\CategoriesController))
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-16 13:07:55 --> CodeIgniter\HTTP\IncomingRequest::getJSON(): Argument #1 ($assoc) must be of type bool, null given, called in /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/Rest/CategoriesController.php on line 41
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/Rest/CategoriesController.php(41): CodeIgniter\HTTP\IncomingRequest->getJSON(NULL)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Rest\CategoriesController->categoriesDeleteRest()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rest\CategoriesController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-16 13:26:29 --> Undefined property: App\Controllers\Rest\CategoriesController::$categoriesDeleteRest
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/Rest/CategoriesController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 59)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Rest\CategoriesController->categoriesDelete()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rest\CategoriesController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

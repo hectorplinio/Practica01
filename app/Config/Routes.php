@@ -26,6 +26,8 @@ $routes->setAutoRoute(false);
 if(!defined('ADMIN_NAMESPACE'))define ('ADMIN_NAMESPACE', 'App\Controllers\Administration');
 if(!defined('PUBLIC_NAMESPACE'))define ('PUBLIC_NAMESPACE', 'App\Controllers\PublicSection');
 if(!defined('COMMAND_NAMESPACE'))define ('COMMAND_NAMESPACE', 'App\Controllers\Command');
+if(!defined('REST_NAMESPACE'))define ('REST_NAMESPACE', 'App\Controllers\Rest');
+
 
 /*
  * --------------------------------------------------------------------
@@ -51,15 +53,31 @@ $routes->group('', function ($routes){
 });
 $routes->group('admin', function ($routes){
     $routes->get('', 'HomeController::home' , ['as' => 'admin_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    $routes->get('festivals', 'FestivalController::getFestivalsData' , ['as' => 'festivals_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    $routes->get('categories', 'CategoriesController::home' , ['as' => 'categories_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    $routes->get('users', 'UsersController::home' , ['as' => 'users_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    $routes->get('roles', 'RolesController::home' , ['as' => 'roles_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    $routes->get('settings', 'SettingsController::home' , ['as' => 'settings_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
 });
 $routes->group('commands', function ($routes){
     $routes->cli('comando_uno', 'Prueba::comandoUno' , ['namespace' => COMMAND_NAMESPACE ]);
     $routes->cli('comando_dos', 'Prueba::comandoDos' , ['namespace' => COMMAND_NAMESPACE ]);
     $routes->cli('pokemon', 'Prueba::pokemon' , ['namespace' => COMMAND_NAMESPACE ]);
     $routes->cli('villena', 'Prueba::villena' , ['namespace' => COMMAND_NAMESPACE ]);
-
-
 });
+// $routes->group('rest', function ($routes){
+//     $routes->get('prueba_rest', 'PruebaRestController::pruebaRest' , ['namespace' => REST_NAMESPACE ]);
+//     $routes->post('prueba_rest', 'PruebaRestController::pruebaRest' , ['namespace' => REST_NAMESPACE ]);
+//     $routes->delete('prueba_rest', 'PruebaRestController::pruebaRest' , ['namespace' => REST_NAMESPACE ]);
+//     $routes->put('prueba_rest', 'PruebaRestController::pruebaRest' , ['namespace' => REST_NAMESPACE ]);
+// });
+$routes->group('rest', function ($routes){
+    $routes->get('categories', 'CategoriesController::categoriesRest' , ['namespace' => REST_NAMESPACE ]);
+    $routes->get('categories/(:any)', 'CategoriesController::categoriesRest/$1' , ['namespace' => REST_NAMESPACE ]);
+    $routes->delete('categories', 'CategoriesController::categoriesDeleteRest' , ['namespace' => REST_NAMESPACE ]);
+    $routes->post('categories', 'CategoriesController::categoriesUpdateRest' , ['namespace' => REST_NAMESPACE ]);    
+});
+
 
 
 /*

@@ -4,11 +4,23 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+    {
+        "args": [
+            "--extensionDevelopmentPath=${workspaceFolder}"
+        ],
+        "name": "Launch Extension",
+        "outFiles": [
+            "${workspaceFolder}/out/**/*.js"
+        ],
+        "preLaunchTask": "npm",
+        "request": "launch",
+        "type": "pwa-extensionHost"
+    },
         {
             "name": "Listen for Xdebug",
             "type": "php",
             "request": "launch",
-            "port": 8080
+            "port": 9000
         },
         {
             "name": "Launch currently open script",

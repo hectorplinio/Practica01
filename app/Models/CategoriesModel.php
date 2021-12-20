@@ -39,4 +39,13 @@ class CategoriesModel extends Model
         return $this -> where(['id' => $id])
                      ->first();
     }
+    public function findCategoriesDelete($id = null){
+        if (is_null($id)){
+            return $this->findAll();
+        }
+        return $this -> where(['id' => $id])
+                     ->delete($id);
+    }
+
+
 }

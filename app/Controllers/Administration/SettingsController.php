@@ -4,12 +4,12 @@ namespace App\Controllers\Administration;
 
 use App\Controllers\BaseController;
 
-class HomeController extends BaseController
+class SettingsController extends BaseController
 {
     public function home (){
         $data = array(
-            "title" => "Inicio",
+            "title" => "Settings",
         );
-        return view ("Administration/home", $data);
+        return view ("Administration/settings", $data);
     }
 }

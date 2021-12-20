@@ -5,6 +5,7 @@ namespace App\Filters;
 use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
+use Config\UserProfiles;
 
 class LoginAuth implements FilterInterface
 {
@@ -27,10 +28,10 @@ class LoginAuth implements FilterInterface
     {
         $session = session();
         if ($session->get('username')){
-            if ($session->get('rol') == "admin"){
+            if ($session->get('rol') == UserProfiles::ADMIN_ROLE){
                 return redirect() -> route("admin_page");
             }
-            else if ($session->get('rol') == "app_client"){
+            else if ($session->get('rol') == UserProfiles::APP_PUBLIC_ROLE){
                 return redirect() -> route("home_page");
             }
          }

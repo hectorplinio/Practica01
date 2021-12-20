@@ -30,12 +30,12 @@
             <div> 
                 <a href="#" class="nav_logo"><i class="fas fa-solar-panel nav_logo-icon"></i> <span class="nav_logo-name">Panel Admin</span> </a>
                 <div class="nav_list"> 
-                    <a href="#" class="nav_link active"> <i class="fas fa-home"></i> <span class="nav_name">Inicio</span> </a> 
-                    <a href="#" class="nav_link"> <i class="fas fa-music"></i> <span class="nav_name">Festivales</span> </a> 
-                    <a href="#" class="nav_link"> <i class="far fa-list-alt"></i> <span class="nav_name">Categorías</span> </a> 
-                    <a href="#" class="nav_link"> <i class="fas fa-users"></i> <span class="nav_name">Usuarios</span> </a> 
-                    <a href="#" class="nav_link"> <i class="fas fa-user-tag"></i> <span class="nav_name">Roles</span> </a> 
-                    <a href="#" class="nav_link"> <i class="fas fa-cogs"></i> <span class="nav_name">Configuración</span> </a> 
+                    <a href="<?= route_to('admin_page') ?>" class="nav_link active" id="home"> <i class="fas fa-home"></i> <span class="nav_name">Inicio</span> </a> 
+                    <a href="<?= route_to('festivals_page') ?>" onclick="return activeFestival()" class="nav_link" id="music"> <i class="fas fa-music"></i> <span class="nav_name">Festivales</span> </a> 
+                    <a href="<?= route_to('categories_page') ?>" class="nav_link"> <i class="far fa-list-alt"></i> <span class="nav_name">Categorías</span> </a> 
+                    <a href="<?= route_to('users_page') ?>" class="nav_link"> <i class="fas fa-users"></i> <span class="nav_name">Usuarios</span> </a> 
+                    <a href="<?= route_to('roles_page') ?>" class="nav_link"> <i class="fas fa-user-tag"></i> <span class="nav_name">Roles</span> </a> 
+                    <a href="<?= route_to('settings_page') ?>" class="nav_link"> <i class="fas fa-cogs"></i> <span class="nav_name">Configuración</span> </a> 
                 </div>
             </div> 
             <a href="#" class="nav_link"> <i class="fas fa-sign-out-alt"></i> <span class="nav_name">Cerrar sesión</span> </a>
@@ -48,5 +48,14 @@
         </div>
         <?= $this->renderSection('section') ?>
     </div>
+    <script type="text/javascript">
+            function activeFestival(){
+                debugger;
+                $("#home").removeClass('nav_link active').addClass('nav_link');            
+                $("#music").removeClass('nav_link').addClass('nav_link active');
+                preventDefault();
+            }
+    </script>
 </body>
+
 </html>

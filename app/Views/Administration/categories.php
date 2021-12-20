@@ -10,13 +10,24 @@
 
         <script type="text/javascript">
             $(document).ready( function () {
+                $('#table_id').DataTable();
             } );
         </script>
     <?= $this->endSection() ?>
     <?= $this->section('section') ?>
-        <h1>Bienvenido al Panel de Admin</h1>
-        <h5>Desde aquí podrás gestionar todos los contenidos de tu aplicación</h5>
+        <table id="table_id" class="display">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Fecha</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
         
+    </tbody>
 </table>
-        <!-- <a href="<?= route_to('login_page') ?>">Ir a login</a> -->
+        <a href="<?= route_to('login_page') ?>">Ir a login</a>
     <?= $this->endSection() ?>

@@ -5,8 +5,11 @@ namespace App\Controllers\Rest;
 use CodeIgniter\RESTful\ResourceController;
 class PruebaRestController extends ResourceController
 {
-    public function index()
+    protected $modelName = 'App\Models\CategoriesModel';
+    protected $format = "json"; 
+    //respond($data = null, ?int $status = null, string $message = "");
+
+    public function pruebaRest()
     {
-        //
     }
 }
