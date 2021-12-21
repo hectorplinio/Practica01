@@ -22,3 +22,17 @@ CRITICAL - 2021-12-20 12:00:36 --> Call to undefined method App\Entities\Categor
 #2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2021-12-20 12:24:40 --> Undefined variable $festivals
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/Administration/FestivalController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 33)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Administration\FestivalController->getFestivalsData()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administration\FestivalController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-20 12:25:32 --> Call to undefined method App\Models\FestivalsModel::findFestivalsDatatable
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/Administration/FestivalController.php(25): CodeIgniter\Model->__call('findFestivalsDa...', Array)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Administration\FestivalController->getFestivalsData()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administration\FestivalController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

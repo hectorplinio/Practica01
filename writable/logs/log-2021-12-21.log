@@ -1,0 +1,158 @@
+CRITICAL - 2021-12-21 04:40:57 --> Call to undefined method App\Models\FestivalsModel::findFestivalsDatatable
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/Administration/FestivalController.php(25): CodeIgniter\Model->__call('findFestivalsDa...', Array)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Administration\FestivalController->getFestivalsData()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administration\FestivalController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-21 04:41:36 --> Call to undefined method App\Models\FestivalsModel::findFestivalsDatatable
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/Administration/FestivalController.php(25): CodeIgniter\Model->__call('findFestivalsDa...', Array)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Administration\FestivalController->getFestivalsData()
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administration\FestivalController))
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-21 04:55:44 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Model.php on line 723
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Model.php(723): CodeIgniter\Database\BaseBuilder->get('Festivals', 0, 10)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Models/FestivalsModel.php(48): CodeIgniter\Model->__call('get', Array)
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/Administration/FestivalController.php(25): App\Models\FestivalsModel->findFestivalsDatatable('0', '10')
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Administration\FestivalController->getFestivalsData()
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administration\FestivalController))
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-21 04:55:58 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Model.php on line 723
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Model.php(723): CodeIgniter\Database\BaseBuilder->get('Festivals', 0, 10)
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Models/FestivalsModel.php(48): CodeIgniter\Model->__call('get', Array)
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/app/Controllers/Administration/FestivalController.php(25): App\Models\FestivalsModel->findFestivalsDatatable('0', '10')
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Administration\FestivalController->getFestivalsData()
+#4 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administration\FestivalController))
+#5 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-21 05:07:25 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:07:29 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:07:31 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:09:08 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:10:42 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:11:07 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:11:46 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:12:03 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:12:10 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:12:14 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:12:25 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:12:30 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:14:09 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:16:04 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:16:19 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:20:25 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:20:27 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:21:02 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:21:30 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:21:58 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-21 05:22:37 --> private_auth filter must have a matching alias defined.
+#0 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('private_auth')
+#1 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(375): CodeIgniter\Filters\Filters->enableFilter('private_auth', 'before')
+#2 /Applications/MAMP/htdocs/Codeigniter/Practica01/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/Codeigniter/Practica01/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

@@ -46,6 +46,10 @@ class CategoriesModel extends Model
         return $this -> where(['id' => $id])
                      ->delete($id);
     }
+    public function findCategoriesDatatable($limitStart, $limitLenght) {
+        return $this->limit($limitLenght, $limitStart)
+                    ->find();
+    }
 
 
 }

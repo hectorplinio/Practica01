@@ -9,59 +9,59 @@
     <script src="<?= base_url('assets/Administration/js/menu.js')?>" type="text/javascript"></script>
 
         <script type="text/javascript">
-            var columnsDefinition =[
+            var columnsDefinition = [
                 {
                     "targets": 0,
-                    "render": function(data, type, row, meta){
+                    "render": function (data, type, row, meta) {
                         return row["id"];
                     }
                 },
                 {
                     "targets": 1,
-                    "render": function(data, type, row, meta){
+                    "render": function (data, type, row, meta) {
                         return row["name"];
                     }
                 },
                 {
                     "targets": 2,
-                    "render": function(data, type, row, meta){
+                    "render": function (data, type, row, meta) {
                         return row["date"];
                     }
                 },
                 {
                     "targets": 3,
-                    "render": function(data, type, row, meta){
-                        return '<span class="badge bg-primary">'+row["price"]+"€"+'</span>';
+                    "render": function (data, type, row, meta) {
+                        return '<span class="badge bg-primary">' + row["price"] + '€ </span>';
                     }
                 },
                 {
                     "targets": 4,
-                    "render": function(data, type, row, meta){
-                        return "";
+                    "render": function (data, type, row, meta) {
+                        return '<button class="btn"><i class="fa fa-trash"></i></button> <button class="btn"><i class="fa fa-edit"></i></button>';
                     }
-                },
+                }
             ]
 
             $(document).ready( function () {
                 let festivalsDatatable= $('#festivals_datatable').DataTable({
-                    "processing": true,
+                    "processing": true, //Para mostrar el loading
                     "responsive": true,
-                    "serverSide": true,
-                    "searching": false,
-                    "columnDefs": columnsDefinition,
-                    "fnDrawCallback": function (oSettings){
-                        if (oSettings._iDisplayLength >= oSettings.fnRecordsTotal())
-                            $(oSettings.nTableWrapper).find('.dataTables_paginate').hide();
-                        else
+                    "serverSide": true, //Activar Ajax
+                    "searching": false, //Si queremos que apareza la barra buscador
+                    "columnDefs": columnsDefinition, //Array de columnas que hemos definido arriba
+                    "fnDrawCallback": function (oSettings) {
+                        if (oSettings._DisplayLength >= oSettings.fnRecordsTotal())
+                            $(oSettings.nTableWrapper).find('.dataTables_paginated').hide();
+                        else 
                             $(oSettings.nTableWrapper).find('.dataTables_paginate').show();
                     },
                     "ajax": {
                         url: "<?= route_to('festivals_data') ?>",
                         type: "POST",
-                        data: function() {},
+                        data: function () {},
                         error: function (data) {
-                            console.log(data)
-                        }
+                            console.log(data);
+                    }
                     }
                 });
             } );

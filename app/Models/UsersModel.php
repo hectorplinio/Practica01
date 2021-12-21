@@ -65,4 +65,8 @@ class UsersModel extends Model
         return $this -> where(['rol_id' => $rol_id])
                      ->find();
     }
+    public function findUsersDatatable($limitStart, $limitLenght) {
+        return $this->limit($limitLenght, $limitStart)
+                    ->find();
+    }
 }

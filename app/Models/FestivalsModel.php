@@ -43,6 +43,10 @@ class FestivalsModel extends Model
         return $this -> where(['id' => $id])
                      ->first();
     }
+    public function findFestivalsDatatable($limitStart, $limitLenght) {
+        return $this->limit($limitLenght, $limitStart)
+                    ->find();
+    }
     public function findFestivalsByCategory($category_id = null){
         if (is_null($category_id)){
             return $this->findAll();

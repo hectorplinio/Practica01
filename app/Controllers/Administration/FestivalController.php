@@ -13,24 +13,26 @@ class FestivalController extends BaseController
         );
         return view ("Administration/festivals", $data);
     }
-    public function getFestivalsData(){
+    public function getFestivalsData() {
+        header('Access-Control-Allow-Origin: *');
+
         $request = $this->request;
 
         $limitStart = $request->getVar("start");
-        $limitLength = $request->getVar("length");
+        $limitLenght = $request->getVar("length");
         $draw = $request->getVar("draw");
 
-        $festM= new FestivalsModel();
+        $festM = new FestivalsModel();
 
-        $festivals = $festM->findFestivalsDatatable($limitStart, $limitLength);
+        $festivals = $festM->findFestivalsDatatable($limitStart, $limitLenght);
 
         $totalRecords = $festM->countAllResults();
 
         $json_data = array(
-            "draw" => $draw,
+            "draw" => $draw, 
             "recordsTotal" => $totalRecords,
             "recordsFiltered" => $totalRecords,
-            "data" => $festivals
+            "data" => $festivals,
         );
 
         return json_encode($json_data);

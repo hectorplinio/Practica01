@@ -53,12 +53,20 @@ $routes->group('', function ($routes){
 });
 $routes->group('admin', function ($routes){
     $routes->get('', 'HomeController::home' , ['as' => 'admin_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
-    $routes->get('festivals', 'FestivalController::getFestivalsData' , ['as' => 'festivals_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    $routes->get('festivals', 'FestivalController::home' , ['as' => 'festivals_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
     $routes->get('categories', 'CategoriesController::home' , ['as' => 'categories_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
     $routes->get('users', 'UsersController::home' , ['as' => 'users_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
     $routes->get('roles', 'RolesController::home' , ['as' => 'roles_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
     $routes->get('settings', 'SettingsController::home' , ['as' => 'settings_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
 });
+
+//----------- DataTable routes ------------------
+$routes->post('festivals_data', 'FestivalController::getFestivalsData' , ['as' => 'festivals_data', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+$routes->post('roles_data', 'RolesController::getRolesData', ['as' => 'roles_data', 'filter' => 'auth_private', 'namespace' => ADMIN_NAMESPACE]);
+$routes->post('categories_data', 'CategoriesController::getCategoriesData', ['as' => 'categories_data', 'filter' => 'auth_private', 'namespace' => ADMIN_NAMESPACE]);
+$routes->post('users_data', 'UsersController::getUsersData', ['as' => 'users_data', 'filter' => 'auth_private', 'namespace' => ADMIN_NAMESPACE]);
+//-----------------------------------------------
+
 $routes->group('commands', function ($routes){
     $routes->cli('comando_uno', 'Prueba::comandoUno' , ['namespace' => COMMAND_NAMESPACE ]);
     $routes->cli('comando_dos', 'Prueba::comandoDos' , ['namespace' => COMMAND_NAMESPACE ]);

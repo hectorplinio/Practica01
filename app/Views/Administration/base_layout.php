@@ -50,7 +50,6 @@
     </div>
     <script type="text/javascript">
             function activeFestival(){
-                debugger;
                 $("#home").removeClass('nav_link active').addClass('nav_link');            
                 $("#music").removeClass('nav_link').addClass('nav_link active');
                 preventDefault();
