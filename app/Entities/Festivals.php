@@ -31,4 +31,7 @@ class Festivals extends Entity
     public function getNanme(){
         return $this->attributes['name'];
     }
+    public function getDateInputFormat($date){
+        return $this->attributes['date'] = date('Y-m-d', strtotime($date));
+    }
 }

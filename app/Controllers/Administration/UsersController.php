@@ -3,6 +3,7 @@
 namespace App\Controllers\Administration;
 
 use App\Controllers\BaseController;
+use App\Libraries\UtilLibrary;
 use App\Models\UsersModel;
 
 class UsersController extends BaseController
@@ -14,7 +15,6 @@ class UsersController extends BaseController
         return view ("Administration/users", $data);
     }
     public function getUsersData() {
-        header('Access-Control-Allow-Origin: *');
 
         $request = $this->request;
 
@@ -36,5 +36,27 @@ class UsersController extends BaseController
         );
 
         return json_encode($json_data);
+    }
+    public function deleteUsers() {
+        try{
+            $request = $this->request;
+            $data = $request->getJSON();
+            $id = $data->id;
+    
+            $util = new UtilLibrary();
+            $userM = new UsersModel();
+    
+            $users = $userM->findUsersDelete($id);
+            if ($users){
+                return $response= $util -> getResponse("OK", "Usuario eliminado correctamente", $users);
+            }else{
+                return $response= $util -> getResponse("KO", "Usuario no se ha podido eliminado", $users);
+
+            }
+        }catch(\Exception $e){
+            return $util-> getResponse("KO", "Error",$e->getMessage());
+
+        }
+        
     }
 }

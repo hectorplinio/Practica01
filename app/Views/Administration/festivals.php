@@ -37,11 +37,11 @@
                 {
                     "targets": 4,
                     "render": function (data, type, row, meta) {
-                        return '<button class="btn"><i class="fa fa-trash"></i></button> <button class="btn"><i class="fa fa-edit"></i></button>';
+                        return '<button class="btn-danger deleteBtn"><i class="fa fa-trash"></i></button> <button class="btn-success editBtn"><i class="fa fa-edit"></i></button>';
                     }
                 }
             ]
-
+            
             $(document).ready( function () {
                 let festivalsDatatable= $('#festivals_datatable').DataTable({
                     "processing": true, //Para mostrar el loading
@@ -64,12 +64,62 @@
                     }
                     }
                 });
+                $('#festivals_datatable tbody').on('click', '.deleteBtn',function () {
+                    //obtengo los datos de la fila pulsada
+                    var data = festivalsDatatable.row($(this).parents('tr')).data();
+                    console.log(data.id);
+                    event.preventDefault();
+                    $json_data ={
+                        "id": data.id
+                    }
+                    $.ajax({
+                        url: "<?= route_to('festivals_delete') ?>",
+                        type: "DELETE",
+                        data: JSON.stringify($json_data),
+                        processData: false,
+                        contentType: false,
+                        dataType: "json",
+                        async: true,
+                        timeout: 5000,
+                        beforeSend:(xhr) =>{
+
+                        },
+                        success: (response) =>{
+                            console.log(response);
+                            $('#festivals_datatable').DataTable().ajax.reload(null,false);
+                            
+
+                        },
+                        error: (xhr, status, error) =>{
+                            console.log(data);
+                            alert("Se ha producido un error");
+                        },
+                        complete: () =>{
+
+                        }
+                    });
+                    
+            });
+            $('.new-festival-btn').click(function(){
+                window.location.href ="<?=route_to('festivals_view_edit') ?>";
+            });
+            $('#festivals_datatable tbody').on('click', '.editBtn',function () {
+                var data = festivalsDatatable.row($(this).parents('tr')).data();
+                window.location.href ="<?=route_to('festivals_view_edit') ?>/"+data.id;
+            });
+
             } );
+            
+
+            
         </script>
     <?= $this->endSection() ?>
     <?= $this->section('section') ?>
+    <button class="btn btn-primary new-festival-btn" id="formulario" type="submit">Nuevo Festival</button>
+
         <table id="festivals_datatable" class="display" style="width: 100%;">
     <thead>
+
         <tr>
             <th>Id</th>
             <th>Nombre</th>

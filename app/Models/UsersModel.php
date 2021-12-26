@@ -43,6 +43,10 @@ class UsersModel extends Model
         return $this -> where(['id' => $id])
                      ->first();
     }
+    public function findUsersDelete($id = null){
+        return $this -> where(['id' => $id])
+                     ->delete();
+    }
     public function findUsersEmail($email = null){
         if (is_null($email)){
             return $this->findAll();

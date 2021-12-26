@@ -23,7 +23,7 @@ class FestivalsSeeder extends Seeder
                 "price" => $faker->numberBetween($min = 10, $max = 90),
                 "address" => $faker->city,
                 "image_url" => $faker->image,
-                "category_id" => 1,
+                "category_id" => $faker->numberBetween($min = 1, $max = 2),
                 "created_at" => new Time('now')
 
             ],
@@ -34,7 +34,7 @@ class FestivalsSeeder extends Seeder
                 "price" => $faker->numberBetween($min = 10, $max = 90),
                 "address" => $faker->address,
                 "image_url" => $faker->image,
-                "category_id" => 2,
+                "category_id" => $faker->numberBetween($min = 1, $max = 2),
                 "created_at" => new Time('now')
 
             ]

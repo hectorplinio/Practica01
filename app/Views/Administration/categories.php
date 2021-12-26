@@ -23,15 +23,15 @@
                     }
                 },
                 {
-                    "targets": 4,
+                    "targets": 2,
                     "render": function (data, type, row, meta) {
-                        return '<button class="btn"><i class="fa fa-trash"></i></button> <button class="btn"><i class="fa fa-edit"></i></button>';
+                        return '<button class="btn-danger deleteBtn"><i class="fa fa-trash"></i></button> <button class="btn-success"><i class="fa fa-edit"></i></button>';
                     }
                 }
             ]
 
             $(document).ready( function () {
-                let festivalsDatatable= $('#categories_datatable').DataTable({
+                let categoriesDatatable= $('#categories_datatable').DataTable({
                     "processing": true, //Para mostrar el loading
                     "responsive": true,
                     "serverSide": true, //Activar Ajax
@@ -52,6 +52,42 @@
                     }
                     }
                 });
+                $('#categories_datatable tbody').on('click', '.deleteBtn',function () {
+                    //obtengo los datos de la fila pulsada
+                    var data = categoriesDatatable.row($(this).parents('tr')).data();
+                    console.log(data.id);
+                    event.preventDefault();
+                    $json_data ={
+                        "id": data.id
+                    }
+                    $.ajax({
+                        url: "<?= route_to('categories_delete') ?>",
+                        type: "DELETE",
+                        data: JSON.stringify($json_data),
+                        processData: false,
+                        contentType: false,
+                        dataType: "json",
+                        async: true,
+                        timeout: 5000,
+                        beforeSend:(xhr) =>{
+
+                        },
+                        success: (response) =>{
+                            console.log(response);
+                            $('#categories_datatable').DataTable().ajax.reload(null,false);
+                            
+
+                        },
+                        error: (xhr, status, error) =>{
+                            console.log(data);
+                            alert("Se ha producido un error");
+                        },
+                        complete: () =>{
+
+                        }
+                    });
+                    
+            });
             } );
         </script>
     <?= $this->endSection() ?>
@@ -61,8 +97,6 @@
         <tr>
             <th>Id</th>
             <th>Nombre</th>
-            <th>Fecha</th>
-            <th>Precio</th>
             <th>Acciones</th>
         </tr>
     </thead>

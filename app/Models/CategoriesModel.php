@@ -40,12 +40,16 @@ class CategoriesModel extends Model
                      ->first();
     }
     public function findCategoriesDelete($id = null){
-        if (is_null($id)){
-            return $this->findAll();
-        }
         return $this -> where(['id' => $id])
-                     ->delete($id);
+                     ->delete();
     }
+    // public function findCategoriesDelete($id = null){
+    //     if (is_null($id)){
+    //         return $this->findAll();
+    //     }
+    //     return $this -> where(['id' => $id])
+    //                  ->delete($id);
+    // }
     public function findCategoriesDatatable($limitStart, $limitLenght) {
         return $this->limit($limitLenght, $limitStart)
                     ->find();

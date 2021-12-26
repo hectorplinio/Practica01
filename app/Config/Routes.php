@@ -54,6 +54,13 @@ $routes->group('', function ($routes){
 $routes->group('admin', function ($routes){
     $routes->get('', 'HomeController::home' , ['as' => 'admin_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
     $routes->get('festivals', 'FestivalController::home' , ['as' => 'festivals_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    //Llamada post para guardar los datos
+    $routes->post('festivals', 'FestivalController::saveFestival' , ['as' => 'festivals_save' ,'namespace' => ADMIN_NAMESPACE ]);
+    //
+    //----Vistas para el formulario de crear/editar
+    $routes->get('festivals/view/edit', 'FestivalController::viewEditFestival' , ['as' => 'festivals_view_edit', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    $routes->get('festivals/view/edit/(:any)', 'FestivalController::viewEditFestival/$1' , ['filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    
     $routes->get('categories', 'CategoriesController::home' , ['as' => 'categories_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
     $routes->get('users', 'UsersController::home' , ['as' => 'users_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
     $routes->get('roles', 'RolesController::home' , ['as' => 'roles_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
@@ -65,6 +72,13 @@ $routes->post('festivals_data', 'FestivalController::getFestivalsData' , ['as' =
 $routes->post('roles_data', 'RolesController::getRolesData', ['as' => 'roles_data', 'filter' => 'auth_private', 'namespace' => ADMIN_NAMESPACE]);
 $routes->post('categories_data', 'CategoriesController::getCategoriesData', ['as' => 'categories_data', 'filter' => 'auth_private', 'namespace' => ADMIN_NAMESPACE]);
 $routes->post('users_data', 'UsersController::getUsersData', ['as' => 'users_data', 'filter' => 'auth_private', 'namespace' => ADMIN_NAMESPACE]);
+//-----------------------------------------------
+
+//----------- DataTable routes delete------------------
+$routes->delete('festivals_delete', 'FestivalController::deleteFestival' , ['as' => 'festivals_delete', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+$routes->delete('roles_delete', 'RolesController::deleteRoles', ['as' => 'roles_delete', 'filter' => 'auth_private', 'namespace' => ADMIN_NAMESPACE]);
+$routes->delete('categories_delete', 'CategoriesController::deleteCategories', ['as' => 'categories_delete', 'filter' => 'auth_private', 'namespace' => ADMIN_NAMESPACE]);
+$routes->delete('users_delete', 'UsersController::deleteUsers', ['as' => 'users_delete', 'filter' => 'auth_private', 'namespace' => ADMIN_NAMESPACE]);
 //-----------------------------------------------
 
 $routes->group('commands', function ($routes){

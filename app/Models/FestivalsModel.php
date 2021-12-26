@@ -43,6 +43,10 @@ class FestivalsModel extends Model
         return $this -> where(['id' => $id])
                      ->first();
     }
+    public function findFestivalsDelete($id = null){
+        return $this -> where(['id' => $id])
+                     ->delete();
+    }
     public function findFestivalsDatatable($limitStart, $limitLenght) {
         return $this->limit($limitLenght, $limitStart)
                     ->find();

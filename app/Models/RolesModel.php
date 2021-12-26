@@ -36,5 +36,11 @@ class RolesModel extends Model
     // protected $afterFind      = [];
     // protected $beforeDelete   = [];
     // protected $afterDelete    = [];
-    
+    public function findRolesDatatable($limitStart, $limitLenght) {
+        return $this->limit($limitLenght, $limitStart)
+                    ->find();
+    }public function findRolesDelete($id = null){
+        return $this -> where(['id' => $id])
+                     ->delete();
+    }
 }
