@@ -60,10 +60,29 @@ $routes->group('admin', function ($routes){
     //----Vistas para el formulario de crear/editar
     $routes->get('festivals/view/edit', 'FestivalController::viewEditFestival' , ['as' => 'festivals_view_edit', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
     $routes->get('festivals/view/edit/(:any)', 'FestivalController::viewEditFestival/$1' , ['filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
-    
+    //
     $routes->get('categories', 'CategoriesController::home' , ['as' => 'categories_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    //Llamada post para guardar los datos
+    $routes->post('categories', 'CategoriesController::saveCategories' , ['as' => 'categories_save' ,'namespace' => ADMIN_NAMESPACE ]);
+    //
+    //----Vistas para el formulario de crear/editar
+    $routes->get('categories/view/edit', 'CategoriesController::viewEditCategories' , ['as' => 'categories_view_edit', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    $routes->get('categories/view/edit/(:any)', 'CategoriesController::viewEditCategories/$1' , ['filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    //
     $routes->get('users', 'UsersController::home' , ['as' => 'users_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    $routes->post('users', 'UsersController::saveUsers' , ['as' => 'users_save' ,'namespace' => ADMIN_NAMESPACE ]);
+    //
+    //----Vistas para el formulario de crear/editar
+    $routes->get('users/view/edit', 'UsersController::viewEditUsers' , ['as' => 'users_view_edit', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    $routes->get('users/view/edit/(:any)', 'UsersController::viewEditUsers/$1' , ['filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    //
     $routes->get('roles', 'RolesController::home' , ['as' => 'roles_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    $routes->post('roles', 'RolesController::saveRoles' , ['as' => 'roles_save' ,'namespace' => ADMIN_NAMESPACE ]);
+    //
+    //----Vistas para el formulario de crear/editar
+    $routes->get('roles/view/edit', 'RolesController::viewEditRoles' , ['as' => 'roles_view_edit', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    $routes->get('roles/view/edit/(:any)', 'RolesController::viewEditRoles/$1' , ['filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
+    //
     $routes->get('settings', 'SettingsController::home' , ['as' => 'settings_page', 'filter' => 'auth_private' ,'namespace' => ADMIN_NAMESPACE ]);
 });
 

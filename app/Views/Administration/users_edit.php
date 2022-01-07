@@ -15,7 +15,7 @@
                     let data = new FormData(this);
                     console.log(data.get("email"));
                     $.ajax({
-                        url: "<?= route_to('festivals_save') ?>",
+                        url: "<?= route_to('users_save') ?>",
                         type: "POST",
                         data: data,
                         processData: false,
@@ -28,6 +28,7 @@
                         },
                         success: (response) =>{
                             console.log("De una");
+                            alert(data);
                             window.history.back();
                             
                         },
@@ -55,24 +56,22 @@
         </div>
     </div>
        <form class="formulario" id="formulario" method="POST" >
-            <input style="display: none;" type="text" id="id" class="form-control" name="id" value="<?= $festival->id?>">
-           <label class="form-label" for="name">Nombre</label>
-           <input required type="text" id="name" class="form-control" name="name" value="<?= $festival->name?>">
+            <input style="display: none;" type="text" id="id" class="form-control" name="id" value="<?= $user->id?>">
+           <label class="form-label" for="username">Username</label>
+           <input required type="text" id="username" class="form-control" name="username" value="<?= $user->username?>">
            <label class="form-label" for="email">Email</label>
-           <input required type="text" id="email" class="form-control" name="email" value="<?= $festival->email?>">
-           <label class="form-label" for="date">Fecha</label>
-           <input required type="date" id="date" class="form-control" name="date" value="<?= $festival->getDateInputFormat($festival->date)?>">
-           <label class="form-label" for="price">Price</label>
-           <input required type="number" id="price" class="form-control" name="price" value="<?= $festival->price?>">
-           <label class="form-label" for="address">Direccion</label>
-           <input required type="text" id="address" class="form-control" name="address" value="<?= $festival->address?>">
-           <label class="form-label" for="image_url">Imagen</label>
-           <input required type="text" id="image_url" class="form-control" name="image_url" value="<?= $festival->image_url?>">
-           <label class="form-label" for="category_id">Categoria ID</label>
+           <input required type="text" id="email" class="form-control" name="email" value="<?= $user->email?>">
+           <label class="form-label" for="name">Name</label>
+           <input required type="text" id="name" class="form-control" name="name" value="<?= $user->name?>">
+           <label class="form-label" for="surname">Surname</label>
+           <input required type="text" id="surname" class="form-control" name="surname" value="<?= $user->surname?>">
+           <label class="form-label" for="password">Password</label>
+           <input required type="password" id="password" class="form-control" name="password" value="<?= $user->password?>">
+           <label class="form-label" for="rol_id">Rol ID</label>
            <select class="form-select" name="category_id">
-               <?php foreach($categories as $cat): ?>
-                    <option value="<?=$cat->id?>"<?php if($cat->id == $festival->category_id):?> selected <?php endif ?>>
-                        <?=$cat->name?>
+               <?php foreach($roles as $rol): ?>
+                    <option value="<?=$rol->id?>"<?php if($rol->id == $user->rol_id):?> selected <?php endif ?>>
+                        <?=$rol->name?>
                     </option>
                 <?php endforeach ?>
            </select>

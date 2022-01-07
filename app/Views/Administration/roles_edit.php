@@ -15,7 +15,7 @@
                     let data = new FormData(this);
                     console.log(data.get("email"));
                     $.ajax({
-                        url: "<?= route_to('festivals_save') ?>",
+                        url: "<?= route_to('roles_save') ?>",
                         type: "POST",
                         data: data,
                         processData: false,
@@ -55,27 +55,9 @@
         </div>
     </div>
        <form class="formulario" id="formulario" method="POST" >
-            <input style="display: none;" type="text" id="id" class="form-control" name="id" value="<?= $festival->id?>">
+            <input style="display: none;" type="text" id="id" class="form-control" name="id" value="<?= $rol->id?>">
            <label class="form-label" for="name">Nombre</label>
-           <input required type="text" id="name" class="form-control" name="name" value="<?= $festival->name?>">
-           <label class="form-label" for="email">Email</label>
-           <input required type="text" id="email" class="form-control" name="email" value="<?= $festival->email?>">
-           <label class="form-label" for="date">Fecha</label>
-           <input required type="date" id="date" class="form-control" name="date" value="<?= $festival->getDateInputFormat($festival->date)?>">
-           <label class="form-label" for="price">Price</label>
-           <input required type="number" id="price" class="form-control" name="price" value="<?= $festival->price?>">
-           <label class="form-label" for="address">Direccion</label>
-           <input required type="text" id="address" class="form-control" name="address" value="<?= $festival->address?>">
-           <label class="form-label" for="image_url">Imagen</label>
-           <input required type="text" id="image_url" class="form-control" name="image_url" value="<?= $festival->image_url?>">
-           <label class="form-label" for="category_id">Categoria ID</label>
-           <select class="form-select" name="category_id">
-               <?php foreach($categories as $cat): ?>
-                    <option value="<?=$cat->id?>"<?php if($cat->id == $festival->category_id):?> selected <?php endif ?>>
-                        <?=$cat->name?>
-                    </option>
-                <?php endforeach ?>
-           </select>
+           <input required type="text" id="name" class="form-control" name="name" value="<?= $rol->name?>">
            <button class="btn btn-primary" id="formulario" type="submit">Guardar</button>
         </form>
     <?= $this->endSection() ?>

@@ -54,7 +54,7 @@
                 {
                     "targets": 6,
                     "render": function (data, type, row, meta) {
-                        return '<button class="btn-danger deleteBtn"><i class="fa fa-trash"></i></button> <button class="btn-success"><i class="fa fa-edit"></i></button>';
+                        return '<button class="btn-danger deleteBtn"><i class="fa fa-trash"></i></button> <button class="btn-success editBtn"><i class="fa fa-edit"></i></button>';
                     }
                 }
             ]
@@ -117,10 +117,19 @@
                     });
                     
             });
+            $('.new-user-btn').click(function(){
+                window.location.href ="<?=route_to('users_view_edit') ?>";
+            });
+            $('#users_datatable tbody').on('click', '.editBtn',function () {
+                var data = usersDatatable.row($(this).parents('tr')).data();
+                window.location.href ="<?=route_to('users_view_edit') ?>/"+data.id;
+            });
             } );
         </script>
     <?= $this->endSection() ?>
     <?= $this->section('section') ?>
+    <button class="btn btn-primary new-user-btn" id="formulario" type="submit">Nuevo Usuario</button>
+
         <table id="users_datatable" class="display" style="width: 100%;"s>
     <thead>
         <tr>

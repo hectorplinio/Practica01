@@ -43,4 +43,11 @@ class RolesModel extends Model
         return $this -> where(['id' => $id])
                      ->delete();
     }
+    public function findRoles($id = null){
+        if (is_null($id)){
+            return $this->findAll();
+        }
+        return $this -> where(['id' => $id])
+                     ->first();
+    }
 }

@@ -25,7 +25,7 @@
                 {
                     "targets": 2,
                     "render": function (data, type, row, meta) {
-                        return '<button class="btn-danger deleteBtn"><i class="fa fa-trash"></i></button> <button class="btn-success"><i class="fa fa-edit"></i></button>';
+                        return '<button class="btn-danger deleteBtn"><i class="fa fa-trash"></i></button> <button class="btn-success editBtn"><i class="fa fa-edit"></i></button>';
                     }
                 }
             ]
@@ -88,10 +88,21 @@
                     });
                     
             });
+            $('.new-categories-btn').click(function(){
+                window.location.href ="<?=route_to('categories_view_edit') ?>";
+            });
+            $('#categories_datatable tbody').on('click', '.editBtn',function () {
+                console.log("Hola");
+                var data = categoriesDatatable.row($(this).parents('tr')).data();
+                window.location.href ="<?=route_to('categories_view_edit') ?>/"+data.id;
+            });
+
             } );
         </script>
     <?= $this->endSection() ?>
     <?= $this->section('section') ?>
+    <button class="btn btn-primary new-categories-btn" id="formulario" type="submit">Nueva Categoria</button>
+
         <table id="categories_datatable" class="display">
     <thead>
         <tr>
